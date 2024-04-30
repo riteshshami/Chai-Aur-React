@@ -14,8 +14,11 @@ function App() {
 
   const removeValue = () => {
     console.log(`value added: ${Math.random()*10}`)
-    // counter = counter - 1;
-    setCounter(counter-1)
+    if(counter == 0){
+      document.createElement('p').innerHTML = 'Action not allowed';
+    }else{
+      setCounter(counter-1)
+    }   
   }
 
   return (
