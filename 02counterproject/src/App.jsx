@@ -7,14 +7,14 @@ function App() {
 
 
   const addValue = () => {
-    console.log(`value added: ${Math.random()*10}`)
+    // console.log(`value added: ${Math.random()*10}`)
     // counter = counter + 1;
     setCounter(counter+1)
   }
 
   const removeValue = () => {
-    console.log(`value added: ${Math.random()*10}`)
-    if(counter == 0){
+    // console.log(`value added: ${Math.random()*10}`)
+    if(counter === 0){
       document.createElement('p').innerHTML = 'Action not allowed';
     }else{
       setCounter(counter-1)
